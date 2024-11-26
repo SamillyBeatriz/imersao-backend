@@ -8,15 +8,15 @@
 
 - [x] Aula 1
 - [X] Aula 2
-- [ ] Aula 3
+- [x] Aula 3
 - [ ] Aula 4
 - [ ] Aula 5
 
 ## 💻 Tecnologias utilizadas:
 
 
-Node.js > Ambiente de execução do código JavaScript do lado servidor;
-Express > Framework para aplicativo da web do Node.js;
-Google Gemini > Inteligência artificial;
-MongoDB > Banco de dados NoSQL para armazenar e gerenciar os dados do projeto;
+- Node.js > Ambiente de execução do código JavaScript do lado servidor;
+- Express > Framework para aplicativo da web do Node.js;
+- Google Gemini > Inteligência artificial;
+- MongoDB > Banco de dados NoSQL para armazenar e gerenciar os dados do projeto;
 
