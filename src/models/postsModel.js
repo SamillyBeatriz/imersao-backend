@@ -22,3 +22,10 @@ export async function atualizarPost(id, novoPost) {
     return colecao.updateOne({_id: new ObjectId(objectID)}, {$set: novoPost})
 }
 
+export async function excluirPostPeloId(id) {
+    const db = conexao.db("imersao-instabyte");
+    const colecao = db.collection("posts");
+    const objectID = ObjectId.createFromHexString(id);//converte o parametro id da função para o formato compreendido pelo MongoDB
+    return colecao.deleteOne({ _id: objectID });
+}
+
