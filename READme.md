@@ -14,6 +14,6 @@
 
 ## 💻 Tecnologias utilizadas:
 
-Node.js > Ambiente de execução do código JavaScript do lado servidor;
-Express > Framework para aplicativo da web do Node.js;
-Google Gemini > Inteligência artificial;
+- Node.js > Ambiente de execução do código JavaScript do lado servidor;
+- Express > Framework para aplicativo da web do Node.js;
+- Google Gemini > Inteligência artificial;
