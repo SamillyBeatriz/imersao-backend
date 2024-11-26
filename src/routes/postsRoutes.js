@@ -1,7 +1,7 @@
 import express from 'express';
 import multer from 'multer';
 import cors from 'cors';
-import {listarTodosOsPosts, postarNovoPost, uploadImagem, atualizarNovoPost} from '../controllers/postsController.js';
+import {listarTodosOsPosts, postarNovoPost, uploadImagem, atualizarNovoPost, excluirPost} from '../controllers/postsController.js';
 
 //armazena as configurações de CORS
 const corsOptions = {
@@ -32,6 +32,8 @@ const routes = (app) => {
     app.post('/upload', upload.single('Imagem'), uploadImagem )
     //rota para atualizar posts
     app.put('/upload/:id', atualizarNovoPost );
+    // rota para excluir um post
+    app.delete('/posts/:id', excluirPost);
 }
 
 export default routes;
