@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { getTodosPosts, criarPost, atualizarPost } from "../models/postsModel.js";
+import { getTodosPosts, criarPost, atualizarPost, excluirPostPeloId } from "../models/postsModel.js";
 import gerarDescricaoComGemini from '../services/geminiService.js'
 
 export async function listarTodosOsPosts (req, res)
@@ -12,6 +12,24 @@ export async function postarNovoPost(req, res) {
     try{
         const postCriado = await criarPost(novoPost);
         res.status(200).json(postCriado);
+    }catch(erro){
+        console.error(erro.message);
+        res.status(500).json({'Erro': 'Falha na requisição'});
+    }   
+}
+
+export async function excluirPost(req, res) {
+    const post =  await getTodosPosts();
+    const id = req.params.id;
+    try{
+        const postExluido = await excluirPostPeloId(id);
+
+        if (!post) {
+            return res.status(404).json({   
+ message: 'Post não encontrado' });
+        }
+
+        res.status(200).json(postExluido);
     }catch(erro){
         console.error(erro.message);
         res.status(500).json({'Erro': 'Falha na requisição'});
