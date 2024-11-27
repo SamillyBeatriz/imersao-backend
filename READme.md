@@ -2,7 +2,7 @@
 
 > Repositório dedicado ao desenvolvimento de um projeto com Node.js durante a imersão back-end na plataforma Alura, em parceria com o Google Gemini.
 
-# Ajustes e atualizações:
+## Ajustes e atualizações:
 
 > O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as cinco aulas da imersão:
 
@@ -10,7 +10,7 @@
 - [X] Aula 2
 - [x] Aula 3
 - [x] Aula 4
-- [ ] Aula 5
+- [x] Aula 5
 
 ## 💻 Tecnologias utilizadas:
 
@@ -21,4 +21,6 @@
 - Thunder Client > Extensão no VSCode para testar API;
 - Multer > Middleware do Node.js para fazer upload de arquivos para um servidor;
 - Postman > Ferramenta para testar API (usado para testar upload das imagens no contexto do projeto);
+- Dotenv > Gerenciador para as variáveis de ambiente;
+
 
