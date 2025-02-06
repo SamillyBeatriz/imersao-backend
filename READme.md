@@ -1,4 +1,4 @@
-# *Imersão Back-End*
+# *Imersão Back-End com Node.js*
 
 > Repositório dedicado ao desenvolvimento de um projeto com Node.js durante a imersão back-end na plataforma Alura, em parceria com o Google Gemini.
 
