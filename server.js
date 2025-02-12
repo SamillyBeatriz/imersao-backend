@@ -6,5 +6,5 @@ app.use(express.static('uploads'));// exibe arquivos estáticos para todos os ac
 routes(app)
 
 app.listen(3000, ()=>{
-    console.log('Servidor escutando..'); 
+    console.log('Servidor escutando..'); // para confirmar a conexão com servidor
 });
