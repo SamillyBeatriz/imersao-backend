@@ -4,7 +4,7 @@
 
 ## Ajustes e atualizações:
 
-> O projeto ainda está finalizado e as atualizações foram de acordo com as cinco aulas da imersão:
+> O projeto está finalizado e as atualizações foram de acordo com as cinco aulas da imersão:
 
 - [x] Aula 1
 - [X] Aula 2
